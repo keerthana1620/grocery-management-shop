@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="styles.css" />
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+ />
+ <script src="index.js" defer></script>
+<title>Mi-Gro | Fresh Grocery Store</title>
+ </head>
+<body>
+<header>
+<div class="container">
+ <nav class="navbar">
+ <div class="logo">
+ <h1>Mi-Gro</h1>
+</div>
+ <div class="search-container">
+<div class="search-box">
+ <input
+ type="text"
+ id="search-input"
+ placeholder="Search products..."
+ />
+ <button id="search-btn"><i class="fas fa-search"></i></button>
+ </div>
+ </div>
+<div class="nav-buttons">
+ <button class="nav-btn cart-btn" id="cart-btn">
+ <i class="fas fa-shopping-cart"></i>
+ <span class="cart-count">0</span>
+ </button>
+ <div class="cart-popover" id="cart-popover">
+ <div class="cart-header">
+ <button class="close-cart" id="close-cart">
+ <i class="fas fa-times"></i>
+ </button>
+ </div>
+ <div class="cart-items" id="cart-items"></div>
+ <div class="cart-footer">
+<div class="cart-total">
+ <span>Total:</span>
+ <span id="cart-total-price">₹0</span>
+ </div>
+ <button class="checkout-btn">Checkout</button>
+ </div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+ <main>
+ <div class="container">
+ <section class="hero-section">
+ <div class="hero-content">
+ <h2>Fresh Groceries Delivered to Your Door</h2>
+ <p>
+ Shop from our wide selection of fresh produce and everyday
+ essentials
+ </p>
+ <a href="#products-section" class="btn-primary">Shop Now</a>
+ </div>
+</section>
+
+<section id="products-section" class="products-section">
+<h2 class="section-title">Our Products</h2>
+<div id="filter-buttons" class="filter-container"></div>
+<div id="products" class="products-grid"></div>
+ </section>
+</div>
+ </main>
+</body>
+</html>
